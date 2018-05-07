@@ -28,11 +28,11 @@ h1 {
     color: black;
     text-align: center;
 	font-family: Garamond;
-	font-size: 300%;
+    font-size: 10vh;
 	font-style: normal;
 	font-variant: small-caps;
 	font-weight: 700;
-	line-height: 42px;
+	line-height: 1vh;
     opacity: 1;
 }
 
@@ -40,11 +40,11 @@ h2 {
     color: black;
     text-align: center;
 	font-family: Garamond;
-	font-size: 150%;
+    font-size: 3vh;
 	font-style: normal;
 	font-variant: normal;
 	font-weight: 700;
-	line-height: 28.8px;
+	line-height: 3vh;
     opacity: 1;
 }
 
@@ -53,10 +53,18 @@ div.relative {
     clear:both; 
 }
 
-.img{
-   float: left;
-   margin-right: 1rem;
+img{
+    max-width: 100%;
+    max-height: 100%;
   }
+
+.imleft{
+        float: left;
+}
+
+.imright{
+        float: right;
+}
 
 body, html {
     width: 100%;
@@ -73,20 +81,17 @@ body, html {
    text-align: center;
 }
 
-.bg {
+div.wavehead {
     /* The image used */
-	background-image: url(IMG_4557.jpg);
-	text-align: center;
-
-
-    /* Full height */
-    width: 100%; 
-    height: 100vh;
-
-    /* Center and scale the image nicely */
-    background-position: top center;
+	background-image: url(IMG_4557b.jpg);
     background-repeat: no-repeat;
-    background-size: cover;
+    background-position: right center;
+    background-color: #D5D8DC;
+    border: 1px solid;
+    opacity: 1;
+    width: 98%;
+    height: 30vh;
+    background-size: contain;
 }
 
 div.transbox {
@@ -97,36 +102,41 @@ div.transbox {
   filter: alpha(opacity=40); /* For IE8 and earlier */
 }
 
+div.transbox p {
+  margin: 5%;
+  font-weight: bold;
+  color: #000000;
+  font-size: 44;
+   opacity: 1;
+}
+
 </style>
 </head>
 <body>
-<div class="bg">
+<div class="wavehead">
+    <img style="float:left;" src="Headshot_Humberston.jpg" alt="Josh Humberston"/>
+           <div margin:1rem"> <h1>Josh Humberston</h1>
+            <h2>
+            Ph.D. Student, Oceanography<br>
+            University of New Hampshire <br> 
+            Durham, NH <br>
+            This website is a work in progress (last updated: May 6, 2018)
+         </h2></div>
 
-<div class="transbox" style="float:left;margin:1rem">
-<h1>Josh Humberston</h1>
-<h2>
-Ph.D. Student, Oceanography<br>
-University of New Hampshire <br> 
-Durham, NH <br>
-This website is a work in progress (last updated: May 6, 2018)
-</h2>
 </div>
-<div style="float:left;margin:1rem"><img src="Headshot_Humberston.jpg" alt="Josh Humberston" height="250" width="250" /></div>
 
 <div class="relative" style="float:left;margin:1rem">
     <iframe align="center" width="560" height="315" src="https://www.youtube.com/embed/Hf875WCVV8Q" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
     <p>This simple numerical model demonstrates how the linearized shallow water equations describe basic hydrodynamics in a realistic way.</p>
-</div>
 
 <div class="transbox" style="float:left;margin:1rem">
     <p>
+        <font size="6">
 My interests include:<br>
       - Nearshore Processes<br>
       - Coastal Morphodynamics<br>
-      - Coastal Remote Sensing<br>
+      - Coastal Remote Sensing<br></font>
 </p> 
-
- </div>
 </div>
 
 
