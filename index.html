@@ -97,6 +97,18 @@ div.wavehead {
     width: 98%;
     height: 30vh;
     background-size: contain;
+
+}
+
+div.box {
+  margin: 50px;
+  background-color: #ffffff;
+  border: 2px solid black;
+  text-align: center;
+    background-color: #D5D8DC;
+    padding: 1%;
+    margin: 3%;
+    height: 315px;
 }
 
 div.transbox {
@@ -166,6 +178,7 @@ div.cover {
     margin-bottom: 15px;
     background-color :#33b5e5;
     color: #ffffff;
+    font-size: 30px;
     box-shadow: 0 3px 6px rgba(0,0,0,0.12), 0 3px 6px rgba(0,0,0,0.24);
 }
 .menu li:hover {
@@ -218,7 +231,7 @@ div.cover {
         <div class="col-12 col-s-4 menu">
             <ul>
                 <li>Nearshore Processes</li>
-                <li>Coastal Morphodynamics</li>
+                <li>Sediment Dynamics</li>
                 <li>Inlet hydro-morphodynamics</li>
                 <li>Data Visualization</li>
             </ul>
@@ -236,10 +249,16 @@ div.cover {
     </div>
 </div>
 
-<div style="float:left;" margin:1rem">
-    <iframe align="left" width="560" height="315" src="https://www.youtube.com/embed/Hf875WCVV8Q" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-    <p>This simple numerical model demonstrates how the linearized shallow water equations describe basic hydrodynamics in a realistic way.</p>
+<div class="box">
+    <iframe style="float:left;" width="560" height="315" marginwidth="23px" src="https://www.youtube.com/embed/Hf875WCVV8Q" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
+    <img style="float:right;" width="760" height="315"src="SWE.jpg" alt="Josh Humberston"/>
+    
+    <h2 style="line-height: 10px;">Numerical modeling</h2>
+    <p style=" text-align: left;"><font size="5">Some people can clearly see a physical phenomena in terms of its governing equations -- <em>not me</em>.<br><br> I like to visualize complex data and equations. Here, I have discretized the shallow water equations (right) so that they can be used in a model and then applied a simple wave scenario over avarying bottom depth (left). </font></p>
+</div>
+<div>
+    <p><font size="7"><br><br><br><br><br><br><br><br></font></p>
 </div>
 
 
