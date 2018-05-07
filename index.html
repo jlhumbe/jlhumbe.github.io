@@ -8,6 +8,11 @@ a:link {
     background-color: transparent;
     text-decoration: none;
 }
+
+<!--
+.tab { margin-left: 40px; }
+-->
+
 a:visited {
     color: pink;
     background-color: transparent;
@@ -110,6 +115,84 @@ div.transbox p {
    opacity: 1;
 }
 
+
+}
+div.contain {
+  background-size: contain;
+}
+div.cover {
+  background-size: cover;
+}
+
+[class*="col-"] {
+    padding: 35px;
+    max-height: : 30%;
+}
+@media only screen and (min-width: 700px) {
+    .col-s-1 {width: 8.33%;}
+    .col-s-2 {width: 16.66%;}
+    .col-s-3 {width: 25%;}
+    .col-s-4 {width: 33.33%;}
+    .col-s-5 {width: 41.66%;}
+    .col-s-6 {width: 50%;}
+    .col-s-7 {width: 58.33%;}
+    .col-s-8 {width: 66.66%;}
+    .col-s-9 {width: 75%;}
+    .col-s-10 {width: 83.33%;}
+    .col-s-11 {width: 91.66%;}
+    .col-s-12 {width: 100%;}
+}
+@media only screen and (min-width: 768px) {
+    .col-1 {width: 8.33%;}
+    .col-2 {width: 16.66%;}
+    .col-3 {width: 25%;}
+    .col-4 {width: 33.33%;}
+    .col-5 {width: 41.66%;}
+    .col-6 {width: 50%;}
+    .col-7 {width: 58.33%;}
+    .col-8 {width: 66.66%;}
+    .col-9 {width: 75%;}
+    .col-10 {width: 83.33%;}
+    .col-11 {width: 91.66%;}
+    .col-12 {width: 100%;}
+}
+.menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+.menu li {
+    padding: 12px;
+    margin-bottom: 15px;
+    background-color :#33b5e5;
+    color: #ffffff;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.12), 0 3px 6px rgba(0,0,0,0.24);
+}
+.menu li:hover {
+    background-color: #0099cc;
+}
+.aside {
+    background-color: #33b5e5;
+    padding: 15px;
+    color: #ffffff;
+    text-align: center;
+    font-size: 14px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+
+#block_container {
+    text-align: center;
+
+}
+#block_container > div {
+    display: inline-block;
+    vertical-align: middle;
+    padding-right: 5vw;
+    padding-left: 5vw;
+
+}
+/******************************************************************************
+
 </style>
 </head>
 <body>
@@ -125,26 +208,44 @@ div.transbox p {
 
 </div>
 
-<div class="relative" style="float:left;margin:1rem">
-    <iframe align="center" width="560" height="315" src="https://www.youtube.com/embed/Hf875WCVV8Q" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+<div>
+    <h2>Research Interests:</h2>
+</div>
+
+
+<div id="block_container">
+    <div id="bloc1">
+        <div class="col-12 col-s-4 menu">
+            <ul>
+                <li>Nearshore Processes</li>
+                <li>Coastal Morphodynamics</li>
+                <li>Inlet hydro-morphodynamics</li>
+                <li>Data Visualization</li>
+            </ul>
+        </div>
+    </div>
+    <div id="bloc2">
+        <div class="col-12 col-s-1 menu">
+            <ul>
+                <li>Coastal Morphodynamics</li>
+                <li>Applied Research</li>
+                <li>Sandbar evolution</li>
+                <li>Multi-disiplinary approaches</li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<div style="float:left;" margin:1rem">
+    <iframe align="left" width="560" height="315" src="https://www.youtube.com/embed/Hf875WCVV8Q" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
     <p>This simple numerical model demonstrates how the linearized shallow water equations describe basic hydrodynamics in a realistic way.</p>
 
-<div class="transbox" style="float:left;margin:1rem">
-    <p>
-        <font size="6">
-My interests include:<br>
-      - Nearshore Processes<br>
-      - Coastal Morphodynamics<br>
-      - Coastal Remote Sensing<br></font>
-</p> 
 </div>
 
 
 
 <div class="footer">
-  <p>Created by: Josh Humberston </p>
-  <a href="contact" target="_blank">Contact</a> 
-
+  <p>Created by: Josh Humberston<a href="contact" target="_blank">Contact</a></p>
 </div>
 
 </body>
